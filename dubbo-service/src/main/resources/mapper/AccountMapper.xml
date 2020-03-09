@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wish.dubboservice.mapper.AccountMapper">
+    <select id="getAllAccount" resultType="com.wish.dubboservice.entity.Account">
+        select * from account;
+    </select>
+    <insert id="addAccount" parameterType="com.wish.dubboservice.entity.Account">
+        insert into account (username,address) values (#{username},#{address});
+    </insert>
+    <update id="updateAccount" parameterType="com.wish.dubboservice.entity.Account">
+        update account set username=#{username},address=#{address} where id=#{id}
+    </update>
+    <delete id="deleteAccountById">
+        delete from account where id=#{id}
+    </delete>
+</mapper>
