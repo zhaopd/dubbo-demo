@@ -18,6 +18,8 @@
     <modules>
         <module>dubbo-web</module>
         <module>dubbo-api</module>
+        <module>dubbo-house-service</module>
+        <module>asr</module>
     </modules>
     <dependencies>
         <dependency>

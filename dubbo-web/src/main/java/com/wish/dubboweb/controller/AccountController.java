@@ -14,7 +14,7 @@ import java.util.List;
 @RestController
 public class AccountController {
 
-    private Logger logger = LoggerFactory.getLogger(AccountController.class);
+    private Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Reference
     AccountService accountService;
